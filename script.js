@@ -1,19 +1,19 @@
 var money = prompt("Till month","0");
 var time = prompt("Date YYYY-MM-DD");
-var appData = new Object();
-appData.money = money;
-appData.timeData = time;
-appData.expenses=new Object();
-appData.optionalExpenses=new Object;
-appData.income = [];
-appData.savings = false;
+let appData = {
+budjet : money,
+timeData : time,
+expenses : {},
+optionalExpenses:{},
+income:[],
+savings : false
+}
 
-var tempStrForName=prompt("Name of minuses");
-
-appData.expenses[tempStrForName] = prompt("sum");
-
-tempStrForName=prompt("Name of minuses");
-
-appData.expenses[tempStrForName] = prompt("sum");
+let tempStrForName1=prompt("Name of minuses"),
+mSum1=prompt("sum"),
+tempStrForName2=prompt("Name of minuses"),
+mSum2 = prompt("sum");
+appData.expenses.tempStrForName1=mSum1;
+appData.expenses.tempStrForName2=mSum2;
 
 alert("1 day "+appData.money/30);
